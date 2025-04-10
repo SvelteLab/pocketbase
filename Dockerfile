@@ -14,4 +14,4 @@ RUN unzip /tmp/pb.zip -d /pb/
 EXPOSE 8080
 
 # start PocketBase
-CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080"]
+CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080", "--queryTimeout=120"]
